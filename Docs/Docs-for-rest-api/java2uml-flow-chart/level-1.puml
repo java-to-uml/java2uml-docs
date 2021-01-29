@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Recieve Compressed java \nsource files.;
+:Decompress source files \ninto a directory.;
+:Parse all the files and \ncreate Abstract Syntax Tree.;
+:Extract all the interesting \ninformation from AST using \na symbol solver.;
+:Generate Plant UML syntax \nfrom this information for a \nclass diagram.;
+:Use Plant UML api to generate\na svg using generated syntax;
+:send this svg;
+stop
+
+@enduml

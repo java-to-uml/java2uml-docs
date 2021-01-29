@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Parse Files;
+:Use Symbol Solver\nOn Compilation unit;
+:For Each File\nExtract All the Ancestors, \nAll the field declarations, All\nthe method declarations.;
+:Create mapping for each class,\nSo, that a graph can be genrated\nfor palnt uml syntax genration.;
+stop
+
+@enduml
